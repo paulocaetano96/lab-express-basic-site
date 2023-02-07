@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+#tarantino-favicon {
+  height: 10vh;
+}
+
+.navbar-container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 11vh;
+  width: 100vw;
+
+  background-image: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+
+.button-navbar-container {
+  margin-right: 3vw;
+}
+
+.navbar-buttons {
+  margin-left: 3vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  background-color: rgb(72, 61, 139, 0.4);
+}
+
+.navbar-buttons:hover {
+  height: 7vh;
+  border: 4px solid blue;
+  animation: border-effect 2s linear infinite;
+  background-color: rgb(72, 61, 139, 0.6);
+}
+
+@keyframes border-effect {
+  0% {
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 4px solid blue;
+  }
+  25% {
+    border-top: 4px solid blue;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 4px solid blue;
+  }
+  50% {
+    border-top: 4px solid blue;
+    border-right: 4px solid blue;
+    border-bottom: 0px solid transparent;
+    border-left: 4px solid blue;
+  }
+  75% {
+    border-top: 4px solid blue;
+    border-right: 4px solid blue;
+    border-bottom: 4px solid blue;
+    border-left: 4px solid blue;
+  }
+  100% {
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+  }
+}
+
+.navbar-a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+}
+
+.image-quote-container {
+  background-color: rgb(243, 242, 240);
+  padding-top: 15vh;
+  padding-left: 4vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+#interview-img {
+  height: 50vh;
+}
+
+.funny-quote-container {
+  width: 50vw;
+  padding-left: 10vw;
+  padding-right: 5vw;
+}
+
+#funny-quote {
+  font-size: 2em;
+  line-height: 25px;
+  letter-spacing: 2px;
+}

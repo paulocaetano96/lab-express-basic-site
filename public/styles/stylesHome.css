@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+.homepage-top-section {
+  display: flex;
+  background: url("/public/images/homepage-top-image.png") no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  height: 60vh;
+  width: 100vw;
+  border: 2px solid black;
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 7;
+  }
+
+#home-main-title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Rocher';
+  width: 100vw;
+  height: 60vh;
+  margin-top: 100px;
+  animation: h1-color 2s linear;
+  animation-fill-mode: forwards;
+  font-size: 2em;
+  font-palette: --Mint;
+
+}
+
+@keyframes h1-color {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.homepage-lower-section {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-content: space-evenly;
+  background-color: rgba(60, 57, 135, 0.433);
+  border: 2px solid black;
+}
+
+ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  top: 70vh;
+  position: absolute;
+}
+
+.buttons-homepage {
+  height: 9vh;
+  width: 10vw;
+  border: 3px solid black;
+  background-color: rgb(24, 23, 23, 0.7);
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  align-items: center;
+  z-index: 999;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 3vh;
+  letter-spacing: 1px;
+}
+
+.buttons-homepage:hover {
+  transition: 1s;
+  background: none;
+  height: 12vh;
+  width: 12vw;
+  color:black;
+  border: 5px solid transparent;
+  background-image: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.rolling-images {
+  width: 700px;
+}
+
+.home-lowerimages {
+  display: flex;
+  animation: fade 5s linear infinite;
+  z-index: -999;
+}
